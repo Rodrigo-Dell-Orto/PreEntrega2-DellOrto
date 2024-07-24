@@ -1,0 +1,277 @@
+/*!--------FONTS-------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+/*!---------RESET---------*/
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Lato", sans-serif;
+}
+
+/*!-------HEADER----------*/
+
+header{
+    background-color: white;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+
+header h1{
+    color: black;
+    font-size: 50px;
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li{
+    display: inline-block;
+    margin: 10px;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+header nav ul li a:hover{
+    color: blue;
+}
+
+
+/*!-------MAIN----------*/
+
+
+.destacados h2{
+    color: black;
+    font-size: 45px;
+    text-align: center;
+    padding: 20px;
+}
+
+.destacados-contenedor{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 25px;
+}
+
+.destacados .destacados-contenedor div{
+    border: 1px solid gray;
+    width: 300px;
+    height: 340px;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.destacados div h3{
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+
+.destacados div a{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.destacados div a:hover{
+    background-color: blue;
+}
+
+.destacados div img{
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+}
+
+.destacados-2 h2{
+    color: black;
+    font-size: 45px;
+    text-align: center;
+    padding: 20px;
+}
+
+.grid-galeria{
+    width: 100%;
+    height: 570px;
+    display: grid;
+    grid-template-columns:repeat(3, 1fr) ;
+    grid-auto-rows: 250px;
+    padding: 30px;
+    gap: 15px;
+}
+
+.grid-galeria div img{
+    width: 300px;
+    height: 200px;
+    align-items: center;
+}
+
+.grid-item{
+    border: 1px solid black;
+    margin: 5px;
+    background-color: white;
+    position: relative;
+    border-radius: 10px;
+
+}
+
+.grid-item h3{
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.575);
+    width: 100%;
+    height: 40px;
+    color: white;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*!-------FOOTER---------*/
+
+footer{
+    background-color: black;
+    width: 100%;
+    height: 180px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+footer h2{
+    color: white;
+    font-size: 40px;
+}
+
+footer img{
+    width: 40px;
+    display: flex;
+    flex-direction: column;
+} 
+
+@media (max-width: 1000px){
+    .grid-galeria{
+    grid-template-columns:repeat(2, 1fr) ;
+    height: 830px;
+    padding: 30px;
+    }
+}
+
+@media (max-width: 800px){
+    footer h2{
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 670px){
+    .grid-galeria{
+        grid-template-columns:repeat(1, 1fr) ;
+        height: 1600px;
+        padding: 30px;
+        }
+}
+
+@media (max-width: 630px){
+    footer h2{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 440px){
+    header nav ul li{
+        text-align: center;
+    }
+    header nav ul li a{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 360px){
+    footer{
+        display: inline-block;
+        height: 360px;
+    }
+    .grid-galeria{
+        padding: 60px;
+        }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
