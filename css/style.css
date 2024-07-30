@@ -32,7 +32,7 @@ header h1{
     font-size: 50px;
 }
 
-header nav ul{
+/*header nav ul{
     list-style: none;
     display: flex;
 }
@@ -51,7 +51,7 @@ header nav ul li a{
 header nav ul li a:hover{
     color: blue;
 }
-
+*/
 
 /*!-------MAIN----------*/
 
@@ -101,13 +101,6 @@ header nav ul li a:hover{
     width: 300px;
     height: 200px;
     margin: 10px;
-}
-
-.destacados-2 h2{
-    color: black;
-    font-size: 45px;
-    text-align: center;
-    padding: 20px;
 }
 
 .grid-galeria{

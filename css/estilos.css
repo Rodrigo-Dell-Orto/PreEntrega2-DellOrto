@@ -1,0 +1,58 @@
+/*!--------FONTS-------*/
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+/*!---------RESET---------*/
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box; }
+
+body {
+  font-family: "Lato", sans-serif; }
+
+header {
+  background-color: white;
+  padding: 15px;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1; }
+  header h1 {
+    color: black;
+    font-size: 50px; }
+
+.destacados h2 {
+  color: black;
+  font-size: 45px;
+  text-align: center;
+  padding: 20px; }
+
+.destacados .destacados-contenedor {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 25px; }
+  .destacados .destacados-contenedor div {
+    border: 1px solid gray;
+    width: 300px;
+    height: 340px;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 5px; }
+    .destacados .destacados-contenedor div img {
+      width: 300px;
+      height: 200px;
+      margin: 10px; }
+    .destacados .destacados-contenedor div h3 {
+      font-size: 25px;
+      margin-bottom: 25px; }
+    .destacados .destacados-contenedor div a {
+      text-decoration: none;
+      color: white;
+      background-color: black;
+      padding: 15px;
+      border-radius: 10px; }
+      .destacados .destacados-contenedor div a:hover {
+        background-color: blue; }
