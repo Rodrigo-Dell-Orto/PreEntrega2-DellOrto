@@ -1,0 +1,165 @@
+/*section{
+    margin: 50px;
+}
+
+.caja{
+    width: 300px;
+    height: 300px;
+    background: rgb(0,14,36);
+    background: linear-gradient(90deg, rgba(0,14,36,1) 0%, rgba(4,100,193,1) 0%, rgba(0,212,255,1) 100%);
+
+    transition-property: width;
+
+    transition-duration: 0.3s;
+
+    transition-timing-function: linear;
+
+    transition-delay: 0.2s;
+
+}
+
+.caja:hover{
+    width: 400px;
+}
+
+.la{
+    margin: 0 auto;
+    width: 150px;
+    max-height: 100px;
+    background-color: lightcoral;
+    border-radius: 8px;
+    text-align: center;
+    padding: 8px;
+    margin-bottom: 4px;
+    transition-duration: 2s;
+}
+
+.la:hover{
+    width: 50%;
+}
+
+.linear{
+    transition-timing-function: linear;
+}
+
+.ease{
+    transition-timing-function: ease;
+}
+
+.ease-in{
+    transition-timing-function: ease-in;
+}
+
+.ease-out{
+    transition-timing-function: ease-out;
+}
+
+.ease-in-out{
+    transition-timing-function: ease-in-out;
+}
+
+.steps{
+    transition-timing-function: steps(4);
+}
+*/
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #333;
+    padding: 10px;
+    text-align: right;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu li {
+    padding: 10px;
+    position: relative;
+}
+
+.menu li a, .submenu-icon {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.submenu li {
+    padding: 10px;
+}
+
+.submenu li a {
+    color: white;
+}
+
+.menu-checkbox, .submenu-checkbox {
+    display: none;
+}
+
+@media (min-width: 769px) {
+    .has-submenu:hover > .submenu {
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+    
+    .menu {
+        display: none;
+        flex-direction: column;
+        align-items: flex-end;
+        width: 100%;
+    }
+    
+    .menu-checkbox:checked + .menu-icon + .menu {
+        display: flex;
+    }
+    
+    .menu li {
+        width: 100%;
+    }
+    
+    .submenu {
+        position: static;
+        display: none;
+        width: 100%;
+    }
+    
+    .submenu-checkbox:checked + .submenu-icon + .submenu {
+        display: flex;
+        flex-direction: column;
+    }
+}

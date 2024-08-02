@@ -1,9 +1,29 @@
+h1{
+    font-size: 45px;
+    font-weight: 800;
+}
+
+.mas{
+    h2{
+        height: 60px;
+        background-color: rgba(189, 189, 189, 0.397);
+        color: black;
+        font-size: 38px;
+        font-weight: 600;
+        text-align: center;
+        padding: 10px;
+    }
+}
+
 .destacados{
     h2{
+        height: 60px;
+        background-color: rgba(189, 189, 189, 0.397);
         color: black;
-        font-size: 45px;
+        font-size: 38px;
+        font-weight: 600;
         text-align: center;
-        padding: 20px;
+        padding: 10px;
     }
     .destacados-contenedor{
         display: flex;
@@ -12,31 +32,87 @@
         flex-wrap: wrap;
         padding: 25px;
         div{
-            border: 1px solid gray;
+            border: 1.5px solid rgba(205, 205, 205, 0.397);
             width: 300px;
-            height: 340px;
+            height: 480px;
             text-align: center;
             margin-bottom: 20px;
-            border-radius: 5px;
+            border-radius: 18px;
+            transition: 0.3s;
+            &:hover{
+                border: 1.5px solid black;
+            }
             img{
                 width: 300px;
                 height: 200px;
                 margin: 10px;
             }
             h3{
-                font-size: 25px;
-                margin-bottom: 25px;
+                font-size: 20px;
+                font-weight: 700;
+                margin-bottom: 30px;
+            }
+            h4{
+                font-size: 20px;
+                margin-bottom: 15px;
+            }
+            h5{
+                font-size: 15px;
+                text-align: start;
+                margin: 15px;
             }
             a{
                 text-decoration: none;
                 color: white;
                 background-color: black;
-                padding: 15px;
-                border-radius: 10px;
+                padding: 10px;
+                border-radius: 12px;
+                transition: 0.4s;
                 &:hover{
-                    background-color: blue;
+                    background-color: rgb(83, 83, 83);
                 }
             }
+        }
+    }
+}
+
+.grid-galeria{
+    width: 100%;
+    height: 570px;
+    display: grid;
+    grid-template-columns:repeat(3, 1fr) ;
+    grid-auto-rows: 250px;
+    padding: 30px;
+    gap: 15px;
+    .grid-item{
+        &:hover{
+            transform: scale(1.03);
+            transition: 0.4s;
+        }
+        img{
+            width: 300px;
+            height: 200px;
+            align-items: center;
+        }
+        border: 1px solid rgba(205, 205, 205, 0.397);
+        margin: 5px;
+        background-color: white;
+        position: relative;
+        border-radius: 18px;
+        &:hover{
+            border: 1px solid black;
+            background-color: rgb(223, 221, 220);
+        }
+        h3{
+            padding: 5px;
+            margin: 0;
+            position: absolute;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.575);
+            width: 100%;
+            height: 40px;
+            color: white;
+            border-radius: 0px 0px 17px 17px;
         }
     }
 }

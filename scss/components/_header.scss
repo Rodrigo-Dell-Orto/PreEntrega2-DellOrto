@@ -7,8 +7,23 @@ header{
     justify-content: space-between;
     align-items: center;
     z-index: 1;
-    h1{
-        color: black;
-        font-size: 50px;
-    }
+}
+
+/* Asegúrate de que el nav se posicione de forma fija y cubra el contenido */
+.navbar {
+    position: fixed; /* Mantén la barra de navegación en la parte superior */
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1050; /* Asegúrate de que el menú esté por encima del contenido */
+}
+
+/* Ajusta el margen del contenido principal para que no quede oculto detrás del menú */
+body {
+    margin-top: 56px; /* Ajusta este valor según la altura de tu barra de navegación */
+}
+
+/* Opcional: Ajusta la apariencia del menú desplegable */
+.dropdown-menu {
+    position: static; /* Asegúrate de que el menú desplegable se comporte de manera esperada */
 }

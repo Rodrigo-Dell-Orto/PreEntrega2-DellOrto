@@ -13,3 +13,140 @@
 body{
     font-family: "Lato", sans-serif;
 }
+
+
+
+//! VARIABLE
+
+$color-principal: black;
+$color-secundario: white;
+$color-terciario: green;
+
+
+
+//! LISTAS
+/*
+$colores:red, green, blue, tomato, pink, gray;
+$font-size: 12px, 16px, 20px, 30px;
+*/
+
+
+
+//! OPERADORES
+/*
+$ancho: 720px;
+img{
+    width: $ancho / 2;
+}
+*/
+
+
+
+//! MAPAS
+/*
+$boton:(
+    bg-boton: black,
+    borde-caja: 2px solid tomato,
+    color-text: white,
+);
+.boton{
+    background-color: map-get($boton, bg-boton);
+    border: map-get($boton, borde-caja)
+}
+*/
+
+
+
+//! EXTENDS
+/*
+%flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.galeria{
+    background-color: red;
+    border: 5px solid blue;
+    @extend %flex;
+}
+
+.galeria2{
+    background-color: black;
+    border: 5px solid purple;
+    color: black;
+    @extend %flex;
+}
+
+.galeria3{
+    background-color: green;
+    border: 5px solid chocolate;
+    @extend %flex;
+}
+*/
+
+
+//! MIXINS
+
+@mixin flex ($flex, $justify, $aling){
+    display: $flex;
+    justify-content: $justify;
+    align-items: $aling;
+}
+
+.contenedor{
+    @include flex (flex, space-between, center)
+}
+
+.contenedor2{
+    @include flex (flex, center, center)
+}
+
+.contenedor3{
+    @include flex(flex, center ,center )
+}
+
+//! CONDICIONALES
+//OPERADORES DE COMPARACION
+// = ASIGNACION
+// == IGUAL (COMPARA VALORES)
+// === ESTRICTAMENTE IGUAL (COMPARA TIPO DE DATOS)
+// > MAYOR QUE
+// < MENOR QUE
+// >= MAYOR O IGUAL A
+// <= MENOR O IGUAL A
+
+// if (condicional){
+//    SE EJECUTA ESTO
+// }else{
+//    SE EJECUTA ESTO
+// }
+
+@mixin modos ($darkmode){
+    @if $darkmode == black{
+        border: solid 2px red;
+    } @else{
+        border: solid 2px blue;
+    }
+}
+
+.bg-condicion{
+    @include modos (black)
+}
+
+
+
+//! BUCLE
+
+@for $i from 1 through 6{
+    .texto-#{$i}{
+        font-size: 24px / $i;
+    }
+}
+
+
+
+
+
+
+

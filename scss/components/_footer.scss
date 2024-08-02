@@ -1,0 +1,25 @@
+footer{
+    background-color: black;
+    width: 100%;
+    height: 180px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    h2{
+        color: white;
+        font-size: 35px;
+    }
+    img{
+        width: 50px;
+        flex-direction: row;
+    }
+    a{
+        text-decoration: none;
+        color: $color-secundario;
+        font-size: 40px;
+        &:hover{
+            color: rgb(193, 191, 191);
+            transition: 0.1s;
+        }
+    }
+}
